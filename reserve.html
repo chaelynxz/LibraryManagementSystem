@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>LMS Sidebar</title>
+    <link rel="stylesheet" href="reserve.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">LMS</div>
+      <h2>Menu</h2>
+      <div class="menu">
+        <button class="menu-item" data-href="index.html">Dashboard</button>
+        <button class="menu-item active" data-href="reserve.html">
+          Reserve/Hold
+        </button>
+        <button class="menu-item" data-href="register.html">Register</button>
+        <button class="menu-item" data-href="members.html">Members</button>
+        <button class="menu-item" data-href="help.html">Help</button>
+      </div>
+      <div class="bottomSide">
+        <div class="profile"></div>
+        <p>Profile</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="topContainer">
+        <h1>Library Management System</h1>
+      </div>
+      <div class="midContainer">
+        <form class="reservation-form" id="reservationForm">
+          <h1>Reserve a Book</h1>
+          <label for="book-title">Book Title:</label>
+          <input
+            type="text"
+            id="book-title"
+            name="book-title"
+            placeholder="Enter the book title"
+            required
+          />
+
+          <label for="member-id">Membership ID:</label>
+          <input
+            type="text"
+            id="member-id"
+            name="member-id"
+            placeholder="Enter your Membership ID"
+            required
+          />
+
+          <label for="reservation-date">Reservation Date:</label>
+          <input
+            type="date"
+            id="reservation-date"
+            name="reservation-date"
+            required
+          />
+
+          <button type="submit">Reserve</button>
+        </form>
+
+        <form class="hold-form" id="holdForm">
+          <h1>Hold a Book</h1>
+          <label for="hold-title">Book Title:</label>
+          <input
+            type="text"
+            id="hold-title"
+            name="hold-title"
+            placeholder="Enter the book title"
+            required
+          />
+
+          <label for="member-id">Membership ID:</label>
+          <input type="text" id="member-id-hold" name="member-id-hold" placeholder="Enter your Membership ID" required>
+     
+
+          <label for="hold-period">Hold Period:</label>
+          <select id="hold-period" name="hold-period" required>
+            <option value="1-day">1 Day</option>
+            <option value="3-days">3 Days</option>
+            <option value="1-week">1 Week</option>
+            <option value="2-weeks">2 Weeks</option>
+            <option value="3-weeks">3 Weeks</option>
+          </select>
+
+          <button type="submit">Hold</button>
+        </form>
+      </div>
+      <div class="messageCon">
+        <div id="successMessage"></div>
+      </div>
+    </div>
+
+    <script src="reserve.js"></script>
+  </body>
+</html>

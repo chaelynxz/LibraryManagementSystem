@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #ffd580; /* Soft yellow-orange */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.sidebar h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sidebar .logo {
+  font-weight: bold;
+  background: #000;
+  color: #ffd580;
+  border-radius: 50%;
+  padding: 10px 16px;
+  margin-bottom: 10px;
+}
+
+.menu-item {
+  color: white;
+  background: transparent;
+  padding: 12px 20px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.menu-item:hover,
+.bottomSide:hover,
+.menu-item.active {
+  background-color: #ffc04d;
+  color: black;
+  font-weight: bold;
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu-item span {
+  color: black;
+  font-weight: bold;
+}
+.sideIcons {
+  height: 40px;
+  width: 40px;
+}
+
+.bottomSide {
+  margin-top: auto;
+  margin-bottom: 20px;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bottomSide p {
+  font-size: 25px;
+}
+
+.profile {
+  margin-top: auto;
+  margin-bottom: 20px;
+  width: 70px;
+  height: 100%;
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 20px;
+  background-image: url(proifilePic.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content {
+  flex: 1;
+  background: #fff5e1;
+  display: flex;
+  flex-direction: column;
+}
+
+.topContainer {
+  height: 125px;
+  width: 100%;
+  background-color: #fee483;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  font-size: 20px;
+}
+
+.midContainer {
+  flex: 1;
+  height: 700px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.sideIcons {
+  height: 40px;
+  width: 40px;
+}
+
+/* Content styling */
+.midContainer h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form styling */
+.reservation-form {
+  max-width: 500px;
+  margin: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reservation-form label {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.reservation-form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.reservation-form input:focus {
+  border-color: #ffc04d;
+  box-shadow: 0 0 5px #ffc04d;
+  outline: none;
+}
+
+.reservation-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffd580;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reservation-form button:hover {
+  background-color: #ffc04d;
+}
+
+/* Styling for the Hold form */
+.hold-form {
+  max-width: 500px;
+  margin: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hold-form label {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.hold-form input,
+.hold-form select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.hold-form input:focus,
+.hold-form select:focus {
+  border-color: #ffc04d;
+  box-shadow: 0 0 5px #ffc04d;
+  outline: none;
+}
+
+.hold-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffd580;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hold-form button:hover {
+  background-color: #ffc04d;
+}
+
+.messageCon{
+position: fixed;
+height: 100px;
+width: 100%;
+bottom: 200px;
+display: flex;
+justify-content: center;
+}
+#successMessage{
+    margin-right: 250px;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    display: none;
+    color: green;
+    font-weight: bold;
+    font-size: 25px;
+}
